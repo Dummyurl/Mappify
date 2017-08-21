@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#E0E0E0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+            <TextView
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:text="What's Your Email?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.70" />
+            <LinearLayout
+                android:background="#EEEEEE"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout"
+                android:layout_below="@+id/imageView2">
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    float:fletPaddingBottom="5dp"
+                    float:fletTextAppearance="@style/floatlabelededittext"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+
+                        android:drawablePadding="10dp"
+                        android:id="@+id/emailwew"
+                        android:hint="Email address"
+                        android:nextFocusDown="@+id/name"
+
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="What's Your Name?"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:background="#EEEEEE"
+               android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout1"
+                android:layout_below="@+id/imageView2">
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="200dp"
+                    float:fletPaddingBottom="5dp"
+                    float:fletTextAppearance="@style/floatlabelededittext"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+
+                        android:drawablePadding="10dp"
+                        android:id="@+id/name"
+                        android:inputType="text"
+                        android:hint="Nome"
+                        android:nextFocusRight="@+id/surname"
+
+                        android:imeOptions="actionNext"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content" />
+
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+                    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                        android:layout_width="match_parent"
+                        float:fletPaddingBottom="5dp"
+                        float:fletTextAppearance="@style/floatlabelededittext"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+
+                            android:drawablePadding="10dp"
+                            android:id="@+id/surname"
+                            android:hint="Cognome"
+                            android:nextFocusDown="@+id/passwerd"
+
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+                </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Create a Password"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:background="#EEEEEE"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout5"
+                android:layout_below="@+id/imageView2">
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    float:fletPaddingBottom="5dp"
+                    float:fletTextAppearance="@style/floatlabelededittext"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+
+                        android:drawablePadding="10dp"
+                        android:id="@+id/paswerd"
+                        android:inputType="textPassword"
+                        android:hint="Password"
+                        android:nextFocusDown="@+id/birthday"
+
+                        android:imeOptions="actionNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="When's Your Birthdav?"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:background="#EEEEEE"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout8"
+                android:layout_below="@+id/imageView2">
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    float:fletPaddingBottom="5dp"
+                    float:fletTextAppearance="@style/floatlabelededittext"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+
+                        android:drawablePadding="10dp"
+                        android:id="@+id/birthday"
+                        android:focusable="false"
+                        android:hint="My Birthdav"
+
+                        android:imeOptions="actionNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="What's Your Gender?"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/female"
+                    android:id="@+id/female"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp" />
+                <ImageView
+                    android:id="@+id/male"
+                    android:src="@drawable/male"
+                    android:layout_marginLeft="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp" />
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Donna"
+                    android:textSize="18sp"
+                    android:id="@+id/donna"
+                    android:textColor="@color/yelow"
+                    android:textAlignment="center"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="Uomo"
+                    android:id="@+id/uomo"
+                    android:textSize="18sp"
+                    android:textColor="@color/yelow"
+                    android:textAlignment="center"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/register"
+                android:background="@drawable/background"
+                android:text="Create"
+                android:textColor="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        </RelativeLayout>
+
+         </ScrollView>
+
+
+
+</LinearLayout>
+
+

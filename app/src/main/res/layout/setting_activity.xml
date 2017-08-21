@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/rearear"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="wrap_content">
+            <com.example.karshima.mappifyapp.utility.RoundedImageView
+                android:id="@+id/user_imagee"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:src="@drawable/profile"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight=".80"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="7dp"
+                android:layout_width="match_parent"
+                android:id="@+id/user_name"
+                android:text="Ratanji Tata"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:padding="7dp"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/item_devider1"/>
+
+    <RelativeLayout
+        android:id="@+id/rtrr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/account"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:text="Change Password"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider"/>
+
+    <RelativeLayout
+        android:id="@+id/rt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/notification"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:text="Notification"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/item_divider"/>
+    <RelativeLayout
+        android:id="@+id/ryyyyyyyyyyy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/speccvj"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:text="Chat"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/item_divider"/>
+
+
+    <RelativeLayout
+        android:id="@+id/ri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/help"
+                android:layout_width="50dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:text="About and help"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/item_divider"/>
+
+
+
+</LinearLayout>

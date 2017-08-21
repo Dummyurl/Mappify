@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.karshima.mappifyapp.SelectAddressActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Choose your route details"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size_large" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/current_location" />
+
+            <TextView
+                android:id="@+id/textview_current_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center_vertical"
+                android:hint="Select Your Start Location"
+                android:minHeight="35dp"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/rounded_circle"></View>
+
+        <View
+            android:layout_gravity="left"
+
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/rounded_circle"></View>
+
+
+        <View
+            android:layout_gravity="left"
+
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/rounded_circle"></View>
+
+
+        <View
+            android:layout_gravity="left"
+
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/rounded_circle"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/destination_location" />
+
+            <TextView
+                android:id="@+id/textview_destination_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center_vertical"
+                android:hint="Select Your End Location"
+                android:minHeight="35dp"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:background="@drawable/bkeeee"
+            android:id="@+id/button_show_map"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Show map" />
+
+    </LinearLayout>
+
+</RelativeLayout>

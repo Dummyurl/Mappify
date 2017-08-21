@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1fc736</color>
+    <color name="colorPrimaryDark">#1fc736</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorbackbtn">#178926</color>
+    <color name="White">#fff</color>
+    <color name="black">#000</color>
+    <color name="yelow">#FFA000</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_gradient_start">#00BDB0</color>
+    <color name="bg_gradient_end">#820d2a</color>
+    <color name="bg_button_login">#336167</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="red">#ae0008</color>
+    <color name="blue">#0000FF</color>
+    <color name="orange">#EF6C00</color>
+    <color name="graywhite">#f6f6f6</color>
+
+
+</resources>

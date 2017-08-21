@@ -1,0 +1,285 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <fragment
+          android:id="@+id/map"
+          class="com.google.android.gms.maps.SupportMapFragment"
+          android:layout_width="match_parent"
+          android:layout_height="660dp"/>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="10dp">
+
+
+                <EditText
+                    android:id="@+id/editsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/search"
+                    android:hint="Enter Address"
+                    android:textColor="#f1f1f1"
+                    android:textColorHint="#f1f1f1" />
+
+                <Button
+                    android:id="@+id/search"
+                    android:layout_width="100dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#8000"
+                    android:text="Search"
+                    android:textColor="#fff" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="60dp"
+                android:background="@color/colorbackbtn"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Time"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Distance"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Duration"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:background="@color/colorbackbtn">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="7h:55m"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="479.23km"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="18.35hr"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="410dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/createtrip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bkeeee"
+                        android:text="Create your Itinerary"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/addpalce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bkeeee"
+                        android:text="Add Your Place"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@color/graywhite"
+                android:layout_marginTop="535dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageButton
+                        android:adjustViewBounds="true"
+                        android:id="@+id/literary"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:src="@drawable/greyiternary"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp" />
+
+
+                    <ImageButton
+                        android:layout_marginLeft="33dp"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/activity"
+                        android:background="@null"
+                        android:src="@drawable/greyactivity"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp" />
+
+
+                    <ImageButton
+                        android:layout_marginLeft="33dp"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/profile"
+                        android:background="@null"
+                        android:src="@drawable/greyprofile"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp" />
+
+
+                    <ImageButton
+                        android:layout_marginLeft="33dp"
+
+                        android:adjustViewBounds="true"
+                        android:id="@+id/primium"
+                        android:background="@null"
+                        android:src="@drawable/greypremium"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:textSize="12sp"
+
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Itinerary"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="33dp"
+                        android:textSize="12sp"
+
+                        android:textColor="@color/black"
+                        android:text="Activity"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="33dp"
+                        android:textSize="12sp"
+
+                        android:textColor="@color/black"
+                        android:text="Profile"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="33dp"
+                        android:textSize="12sp"
+
+                        android:textColor="@color/black"
+                        android:text="Premium"
+                        android:layout_width="51dp"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

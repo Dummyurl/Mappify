@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:map="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+    android:background="@color/white"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+        <ImageView
+            android:src="@drawable/logowhite"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="Create an Itinerary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/addit"
+            android:src="@drawable/add"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/graywhite"
+        android:layout_marginTop="210dp"
+      android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:adjustViewBounds="true"
+                android:id="@+id/literary"
+                android:background="@null"
+                android:src="@drawable/greyiternary"
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+
+
+            <ImageButton
+                android:background="@null"
+                android:layout_marginLeft="33dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/activity"
+                android:src="@drawable/greyactivity"
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+
+
+            <ImageButton
+                android:layout_marginLeft="33dp"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:id="@+id/profile"
+                android:src="@drawable/greyprofile"
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+
+
+            <ImageButton
+                android:background="@null"
+                android:layout_marginLeft="33dp"
+                android:src="@drawable/greypremium"
+                android:adjustViewBounds="true"
+                android:id="@+id/primium"
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:textSize="12sp"
+
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Itinerary"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="33dp"
+                android:textSize="12sp"
+
+                android:textColor="@color/black"
+                android:text="Activity"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="33dp"
+                android:textSize="12sp"
+
+                android:textColor="@color/black"
+                android:text="Profile"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginLeft="33dp"
+                android:textSize="12sp"
+
+                android:textColor="@color/black"
+                android:text="Premium"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+

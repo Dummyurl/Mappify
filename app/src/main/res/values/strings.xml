@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MappifyApp</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+
+    <string name="spinner_title">Select Category</string>
+    <!--DEBBUG GOOGLE API KEY FOR MAP-->
+    <!--<string name="google_api_key">AIzaSyAkwsPx9-aMHziWkOrSd955_YZ5Efvdth4</string> -->
+    <string name="google_api_key">AIzaSyCd1qxpVZ4Y9-7ju2syUYDsScGGgUjppL0</string>
+    <!--DEBBUG GOOGLE KEY FOR PLACES API-->
+    <!--<string name="google_map_api_key">AIzaSyDtqwUKQg5hc4FOiPy-exUr3xsizYCq7b0</string> -->
+    <string name="google_map_api_key">AIzaSyCd1qxpVZ4Y9-7ju2syUYDsScGGgUjppL0</string>
+
+    <string-array name="categories">
+        <item>All</item>
+        <item>Restaurant</item>
+        <item>Bank</item>
+        <item>Hospital</item>
+        <item>Book_store</item>
+        <item>Bus_station</item>
+        <item>Cafe</item>
+        <item>Car_rental</item>
+        <item>Car_repair</item>
+        <item>Church</item>
+        <item>Library</item>
+        <item>Police</item>
+        <item>Post_office</item>
+        <item>School</item>
+        <item>Train_station</item>
+        <item>Zoo</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="Duration">Duration</string>
+    <string name="title_activity_add_shop">AddShopActivity</string>
+    <string name="info">This is not your username or pin.This name will be visible to your Mappify Contacts</string>
+    <string name="tone">Play sounds for incoming and outgoing messages.</string>
+    <string name="chat">Font size for chat screen</string>
+    <string name="about">hfy jkgbj jhviyg nig jhgv jbb iuy fguij iuj pouiu huh i updfuiulk hihit0  guf heghgg hf h gy</string>
+  <string name="facebook_app_id">2006682959585533</string>
+    <string name="exception_message" />
+
+    <string name="join_mappify">Iscrivendoti,accetti le nostre Condizioni di iMotociclisti e  confermidi aver letto la nostra Normativa sulla privacy compresa la sezione dedicata all uso dei cookie Potresti ricevere delle notifiche SMS da iMotociclisti,che potrai disattivare in qualsiasi momento.</string>
+<string name="action_logout">Logout</string>
+    <string name="action_settings">User Profile</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.karshima.mappifyapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.example.karshima.googlemapsv2.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <permission
+        android:name="com.example.karshima.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name=".AppClass"
+        android:allowBackup="true"
+        android:icon="@drawable/logoicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key" />
+
+
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CreateTripActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+       <activity android:name=".MyActivity"
+           android:windowSoftInputMode="stateAlwaysHidden"/>
+
+
+        <activity
+            android:name=".UserProfileActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+
+        <activity android:name=".SettingActivity"
+         android:windowSoftInputMode="stateAlwaysHidden"/>
+
+
+         <activity android:name=".SingleUserProfileActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name=".SendOTP"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name=".ChangePasswordActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name=".NotificationActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+
+         <activity android:name=".ChatSettingActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name=".AboutHelpActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name=".SaveIternaryActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+
+         <activity android:name=".ViewPrimiumCardActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+         <activity android:name=".PrimiumOptionActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+
+        <activity android:name=".AddShopActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+
+        <activity android:name=".ForgotActivity" />
+        <activity
+            android:name=".JoinActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SignUpActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+    </application>
+
+</manifest>

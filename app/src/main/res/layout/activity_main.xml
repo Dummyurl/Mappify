@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/toolbar"></include>
+
+
+
+
+    <ScrollView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:src="@drawable/logowhite"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="91dp"
+                android:id="@+id/imageView2"
+                android:layout_weight="0.19" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_form_rounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout"
+                android:layout_below="@+id/imageView2"
+                android:layout_weight="0.14">
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    float:fletPaddingBottom="5dp"
+                    float:fletTextAppearance="@style/floatlabelededittext"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+
+                     android:drawablePadding="10dp"
+                     android:id="@+id/email"
+
+                     android:hint="Email Address or Phone Number"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+
+
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    float:fletPaddingBottom="5dp"
+                    float:fletTextAppearance="@style/floatlabelededittext"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_marginLeft="10dp"
+                        android:hint="Password"
+                        android:id="@+id/password"
+                        android:drawablePadding="10dp"
+                        android:inputType="textPassword"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+</com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:text="Log In"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:id="@+id/login"
+                android:textSize="15sp"
+                android:background="@drawable/background"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_centerHorizontal="true" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:text="Forgot Password?"
+                    android:id="@+id/forgot"
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/login_buttonf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/login_button"
+                        android:textAllCaps="false"
+                        android:text="Sign in with Facebook"
+                        android:textSize="15sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/background_fb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/join"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/White"
+                    android:text="Sign up for Mappify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
